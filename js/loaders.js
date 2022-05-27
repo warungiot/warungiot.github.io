@@ -18,15 +18,15 @@ function getAllPages(urlPrefix, callback, page, results) {
 }
 
 function getGithubRepos(callback, page, repos) {
-  getAllPages('https://api.github.com/users/yelp/repos', callback);
+  getAllPages('https://api.github.com/users/warungiot/repos', callback);
 }
 
 function getGithubMembers(callback) {
-  getAllPages('https://api.github.com/orgs/yelp/members', callback);
+  getAllPages('https://api.github.com/orgs/warungiot/members', callback);
 }
 
 function loadRepositoryData(repoData) {
-  var org = new Organization('yelp');
+  var org = new Organization('warungiot');
   org.repos = [];
 
   repoData.forEach(function(repoDatum) {
